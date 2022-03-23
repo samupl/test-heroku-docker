@@ -1,0 +1,4 @@
+{
+  "name": "test-heroku-docker-tl",
+  "stack": "container"
+}
