@@ -1,4 +1,11 @@
 {
   "name": "test-heroku-docker-tl",
-  "stack": "container"
+  "stack": "container",
+  "environments": {
+    "review": {
+      "scripts": {
+        "postdeploy": "bash postdeploy.sh"
+      }
+    }
+  }
 }
