@@ -9,5 +9,4 @@ RUN pip install -r requirements.txt
 ADD . .
 
 EXPOSE 80
-ENTRYPOINT ["/app/entrypoint.sh"]
-CMD ["run-prod"]
+CMD gunicorn --bind 0.0.0.0:$PORT --log-file - herokudocker.wsgi
