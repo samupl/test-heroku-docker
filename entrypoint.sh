@@ -17,7 +17,7 @@ case "$1" in
 
   *)
     echo "Executing: $@"
-    exec "$@"
+    echo "$(pwd)"
     ;;
 esac
 
