@@ -1,3 +1,6 @@
 build:
   docker:
     web: Dockerfile
+run:
+  web: gunicorn herokudocker.wsgi -b 0.0.0.0:$PORT --max-requests 1000 --max-requests-jitter 100 -t 240 --log-file -
+
